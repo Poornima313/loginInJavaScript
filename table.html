@@ -1,199 +1,308 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-        <link rel="stylesheet" href="css/table.css" />
-    </head>
-    <body>
-        <div class="topnav" id="myTopnav">
-            <a href="#home" class="active"
-                ><i class="fa fa-home" aria-hidden="true"></i>Home</a
-                >
-            <div class="dropdown">
-                <button class="dropbtn">
-                <i class="fa fa-credit-card" aria-hidden="true"></i>Invoices &
-                Payments
-                <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">View Payments</a>
-                    <a href="#">Manage Payments</a>
-                </div>
-            </div>
-            <a href="#contact"
-                ><i class="fa fa-bars" aria-hidden="true"></i>Contracts</a
-                >
-            <div class="dropdown">
-                <button class="dropbtn">
-                <i class="fa fa-th-large" aria-hidden="true"></i>Application
-                <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">View Contracts</a>
-                    <a href="#">Manage Documents</a>
-                </div>
-            </div>
-            <a
-                href="javascript:void(0);"
-                style="font-size: 15px"
-                class="icon"
-                onclick="myFunction()"
-                >&#9776;</a
-                >
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/table.css" />
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active"
+        ><i class="fa fa-home" aria-hidden="true"></i>Home</a
+      >
+      <div class="dropdown">
+        <button class="dropbtn">
+          <i class="fa fa-credit-card" aria-hidden="true"></i>Invoices &
+          Payments
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">View Payments</a>
+          <a href="#">Manage Payments</a>
         </div>
-        <!--table starts-->
-        <table id="main_table">
-            <tbody>
-                <tr>
-                    <td  colspan="6" class="flip">
-                        <table>
-                            <tr>
-                                <td>
-                                    <div class="table_row main_text">Contract</div>
-                                    <div class="table_row">Product type</div>
-                                </td>
-                                <td>
-                                    <div class="table_row main_text">Product type</div>
-                                    <div class="table_row">Equipment lease</div>
-                                </td>
-                                <td>
-                                    <div class="table_row main_text">Commencement date</div>
-                                    <div class="table_row">11/08/1993</div>
-                                </td>
-                                <td>
-                                    <div class="table_row main_text">Term(In Months)</div>
-                                    <div class="table_row">11/08/1993</div>
-                                </td>
-                                <td>
-                                    <div class="table_row main_text">Maturity date</div>
-                                    <div class="table_row">11/08/1993</div>
-                                </td>
-                                <td>
-                                    <div class="table_row main_text">Payment amount</div>
-                                    <div class="table_row">12345 USD</div>
-                                </td>
-                                <td>
-                                    <div class="table_row main_text">Status</div>
-                                    <div class="table_row">USD</div>
-                                </td>
-                                <td>
-                                    <button id="acc1" class="view_details">Show details<i class="fa fa-chevron-circle-down" aria-hidden="true"></i></button>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </tbody>
-            <tbody class="section">
-                <tr>
-                    <td  colspan="6">
-                        <table>
-                            <tr>
-                                <td>
-                                    <div class="table_row main_text">Payment frequency</div>
-                                    <div class="table_row">Product type</div>
-                                </td>
-                                <td>
-                                    <div class="table_row main_text">Principal balance</div>
-                                    <div class="table_row">12345 USD</div>
-                                </td>
-                                <td>
-                                    <div class="table_row main_text">Interest balance</div>
-                                    <div class="table_row">123 USD</div>
-                                </td>
-                                <td>
-                                    <div class="table_row main_text">Total balance</div>
-                                    <div class="table_row">123 USD</div>
-                                </td>
-                                <td>
-                                    <div class="table_row main_text">Payment remaining</div>
-                                    <div class="table_row">1234 USD</div>
-                                </td>
-                                <td>
-                                    <button class="view_details" class="view_details">View Details<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td  colspan="6" class="flip">
-                        <table>
-                            <tr>
-                                <td>
-                                    <div class="table_row main_text">Contract</div>
-                                    <div class="table_row">Product type</div>
-                                </td>
-                                <td>
-                                    <div class="table_row main_text">Product type</div>
-                                    <div class="table_row">Equipment lease</div>
-                                </td>
-                                <td>
-                                    <div class="table_row main_text">Commencement date</div>
-                                    <div class="table_row">11/08/1993</div>
-                                </td>
-                                <td>
-                                    <div class="table_row main_text">Term(In Months)</div>
-                                    <div class="table_row">11/08/1993</div>
-                                </td>
-                                <td>
-                                    <div class="table_row main_text">Maturity date</div>
-                                    <div class="table_row">11/08/1993</div>
-                                </td>
-                                <td>
-                                    <div class="table_row main_text">Payment amount</div>
-                                    <div class="table_row">12345 USD</div>
-                                </td>
-                                <td>
-                                    <div class="table_row main_text">Status</div>
-                                    <div class="table_row">USD</div>
-                                </td>
-                                <td>
-                                    <button id="acc1" class="view_details">Show details<i class="fa fa-chevron-circle-down" aria-hidden="true"></i></button>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </tbody>
-            <tbody class="section">
-                <tr>
-                    <td  colspan="6">
-                        <table>
-                            <tr>
-                                <td>
-                                    <div class="table_row main_text">Payment frequency</div>
-                                    <div class="table_row">Product type</div>
-                                </td>
-                                <td>
-                                    <div class="table_row main_text">Principal balance</div>
-                                    <div class="table_row">12345 USD</div>
-                                </td>
-                                <td>
-                                    <div class="table_row main_text">Interest balance</div>
-                                    <div class="table_row">123 USD</div>
-                                </td>
-                                <td>
-                                    <div class="table_row main_text">Total balance</div>
-                                    <div class="table_row">123 USD</div>
-                                </td>
-                                <td>
-                                    <div class="table_row main_text">Payment remaining</div>
-                                    <div class="table_row">1234 USD</div>
-                                </td>
-                                <td>
-                                    <button class="view_details">View Details<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="js/table.js"></script>
-    </body>
+      </div>
+      <a href="#contact"
+        ><i class="fa fa-bars" aria-hidden="true"></i>Contracts</a
+      >
+      <div class="dropdown">
+        <button class="dropbtn">
+          <i class="fa fa-th-large" aria-hidden="true"></i>Application
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">View Contracts</a>
+          <a href="#">Manage Documents</a>
+        </div>
+      </div>
+      <a
+        href="javascript:void(0);"
+        style="font-size: 15px"
+        class="icon"
+        onclick="myFunction()"
+        >&#9776;</a
+      >
+    </div>
+    <!--table starts-->
+    <div class="container">
+      <div class="contract__heading">Contracts (3)</div>
+      <table id="main_table" cellspacing="0" cellpadding="0">
+        <tbody>
+          <tr class="parent">
+            <td>
+              <span class="main_text">Contract #</span><br /><span
+                class="sub__text"
+                >123-2</span
+              >
+            </td>
+            <td>
+              <span class="main_text">Product type</span><br /><span
+                class="sub__text"
+                >Equipment lease</span
+              >
+            </td>
+            <td>
+              <span class="main_text">Commencement date</span><br /><span
+                class="sub__text"
+                >11/08/1993</span
+              >
+            </td>
+            <td>
+              <span class="main_text">Term (in months)</span><br /><span
+                class="sub__text"
+                >8</span
+              >
+            </td>
+            <td>
+              <span class="main_text">Maturity date</span><br /><span
+                class="sub__text"
+                >11/08/1993</span
+              >
+            </td>
+            <td>
+              <span class="main_text">Payment amount</span><br /><span
+                class="sub__text"
+                >12345 USD</span
+              >
+            </td>
+            <td><span class="main_text">Status</span><br />USD</td>
+            <td><i class="fa fa-chevron-down"></i></td>
+          </tr>
+          <tr class="cchild">
+            <td>
+              <span class="main_text">Payment frequency</span><br /><span
+                class="sub__text"
+                >Monthly</span
+              >
+            </td>
+            <td>
+              <span class="main_text">Principal balance</span><br /><span
+                class="sub__text"
+                >12345 USD</span
+              >
+            </td>
+            <td>
+              <span class="main_text">Intrest balance</span><br /><span
+                class="sub__text"
+                >12345 USD</span
+              >
+            </td>
+            <td>
+              <span class="main_text">Total balance</span><br /><span
+                class="sub__text"
+                >12345 USD</span
+              >
+            </td>
+            <td>
+              <span class="main_text">Payment remaining</span><br /><span
+                class="sub__text"
+                >12</span
+              >
+            </td>
+            <td></td>
+            <td></td>
+            <td>
+              <button class="view_details" class="view_details">
+                View Details<i class="fa fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="parent">
+            <td>
+              <span class="main_text">Contract #</span><br /><span
+                class="sub__text"
+                >123-2</span
+              >
+            </td>
+            <td>
+              <span class="main_text">Product type</span><br /><span
+                class="sub__text"
+                >Equipment lease</span
+              >
+            </td>
+            <td>
+              <span class="main_text">Commencement date</span><br /><span
+                class="sub__text"
+                >11/08/1993</span
+              >
+            </td>
+            <td>
+              <span class="main_text">Term (in months)</span><br /><span
+                class="sub__text"
+                >7</span
+              >
+            </td>
+            <td>
+              <span class="main_text">Maturity date</span><br /><span
+                class="sub__text"
+                >11/08/1993</span
+              >
+            </td>
+            <td>
+              <span class="main_text">Payment amount</span><br /><span
+                class="sub__text"
+                >12345 USD</span
+              >
+            </td>
+            <td>
+              <span class="main_text">Status</span><br /><span class="sub__text"
+                >USD</span
+              >
+            </td>
+            <td><i class="fa fa-chevron-down"></i></td>
+          </tr>
+          <tr class="cchild">
+            <td>
+              <span class="main_text">Payment frequency</span><br /><span
+                class="sub__text"
+                >Monthly</span
+              >
+            </td>
+            <td>
+              <span class="main_text">Principal balance</span><br /><span
+                class="sub__text"
+                >12345 USD</span
+              >
+            </td>
+            <td>
+              <span class="main_text">Intrest balance</span><br /><span
+                class="sub__text"
+                >12345 USD</span
+              >
+            </td>
+            <td>
+              <span class="main_text">Total balance</span><br /><span
+                class="sub__text"
+                >12345 USD</span
+              >
+            </td>
+            <td>
+              <span class="main_text">Payment remaining</span><br /><span
+                class="sub__text"
+                >12</span
+              >
+            </td>
+            <td></td>
+            <td></td>
+            <td>
+              <button class="view_details" class="view_details">
+                View Details<i class="fa fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="parent">
+            <td>
+              <span class="main_text">Contract #</span><br /><span
+                class="sub__text"
+                >123-2</span
+              >
+            </td>
+            <td>
+              <span class="main_text">Product type</span><br /><span
+                class="sub__text"
+                >Equipment lease</span
+              >
+            </td>
+            <td>
+              <span class="main_text">Commencement date</span><br /><span
+                class="sub__text"
+                >11/08/1993</span
+              >
+            </td>
+            <td>
+              <span class="main_text">Term (in months)</span><br /><span
+                class="sub__text"
+                >7</span
+              >
+            </td>
+            <td>
+              <span class="main_text">Maturity date</span><br /><span
+                class="sub__text"
+                >11/08/1993</span
+              >
+            </td>
+            <td>
+              <span class="main_text">Payment amount</span><br /><span
+                class="sub__text"
+                >12345 USD</span
+              >
+            </td>
+            <td>
+              <span class="main_text">Status</span><br /><span class="sub__text"
+                >USD</span
+              >
+            </td>
+            <td><i class="fa fa-chevron-down"></i></td>
+          </tr>
+          <tr class="cchild">
+            <td>
+              <span class="main_text">Payment frequency</span><br /><span
+                class="sub__text"
+                >Monthly</span
+              >
+            </td>
+            <td>
+              <span class="main_text">Principal balance</span><br /><span
+                class="sub__text"
+                >12345 USD</span
+              >
+            </td>
+            <td>
+              <span class="main_text">Intrest balance</span><br /><span
+                class="sub__text"
+                >12345 USD</span
+              >
+            </td>
+            <td>
+              <span class="main_text">Total balance</span><br /><span
+                class="sub__text"
+                >12345 USD</span
+              >
+            </td>
+            <td>
+              <span class="main_text">Payment remaining</span><br /><span
+                class="sub__text"
+                >12</span
+              >
+            </td>
+            <td></td>
+            <td></td>
+            <td>
+              <button class="view_details" class="view_details">
+                View Details<i class="fa fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/table.js"></script>
+  </body>
 </html>
